@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:chopper/chopper.dart';
 import 'package:holycode_fe/module/user_profile.dart';
 import 'package:holycode_fe/network/client_chopper.dart';
@@ -20,10 +18,4 @@ abstract class InstaScraperApi extends ChopperService {
     @Query('username') String username,
   );
 
-  @Get(
-    path: '/search',
-  )
-  Future<Response<JsArray>> searchUsers(
-    @Query('username') String username,
-  );
 }

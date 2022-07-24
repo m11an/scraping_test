@@ -2,7 +2,7 @@ import 'package:holycode_fe/module/user_profile.dart';
 
 import '../../network/helper/exceptions.dart';
 
-typedef T JsonFactory<T>(Map<String, dynamic> json);
+typedef JsonFactory<T> = T Function(Map<String, dynamic> json);
 
 class JsonTypeParser {
   static const Map<Type, JsonFactory> factories = {

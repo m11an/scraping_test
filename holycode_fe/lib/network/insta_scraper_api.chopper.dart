@@ -23,12 +23,4 @@ class _$InstaScraperApi extends InstaScraperApi {
     final $request = Request('GET', $url, client.baseUrl, parameters: $params);
     return client.send<UserProfile, UserProfile>($request);
   }
-
-  @override
-  Future<Response<JsArray<dynamic>>> searchUsers(String username) {
-    final $url = '/search';
-    final $params = <String, dynamic>{'username': username};
-    final $request = Request('GET', $url, client.baseUrl, parameters: $params);
-    return client.send<JsArray<dynamic>, JsArray<dynamic>>($request);
-  }
 }
