@@ -3,7 +3,6 @@ const PORT = 8000;
 const puppeteer = require('puppeteer');
 const express = require('express');
 const cors = require('cors');
-const swaggerSpec = require('./swagger.js');
 
 const swaggerJsDoc = require('swagger-jsdoc');
 
